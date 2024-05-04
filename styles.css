@@ -1,25 +1,59 @@
-.barf {
-    color: orange;
-}
+/* 
+-----------------------------------------------
+                    VARS 
+-----------------------------------------------
+*/
+:root {
+    --light-green-color: rgb(209, 218, 145);
+    --pink-color: rgb(210, 169, 184);
+    --background-color: rgb(243, 240, 213);
+    --text-color: rgb(84, 98, 58)
+  }
+
+  
+
+
+/* 
+-----------------------------------------------
+                    BODY 
+-----------------------------------------------
+*/
 
 body {
-    color: rgb(84, 98, 58);
+    color: var(--text-color);
+    display: flex;
+    margin: 0;
 }
+
+hr {
+    background-color: var(--background-color);
+    height: 5px;
+    width: 100%;
+    margin:0;
+    border: transparent;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+/* 
+-----------------------------------------------
+                    SIDEBAR 
+-----------------------------------------------
+*/
 
 .sidebar {
     height: 100vh;
-    width: 15vw;
-    background-color: rgb(209, 218, 145);
-    top:0;
-    left:0;
-    position: fixed;
+    background-color: var(--light-green-color);
     display:flex;
+    flex: 0 0 15%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size:x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Jost';
+
 }
+
 
 .sidebar .socialmedia {
     display: flex;
@@ -31,6 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 
@@ -41,14 +76,44 @@ body {
 
 }
 
+.sidebar .frog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xxx-large;
+    font-weight: 600;
+}
+.sidebar .frog li {
+    align-items: center;
+    list-style-type: none;
+    margin: 0vh 0;
 
+
+
+
+/* 
+-----------------------------------------------
+                    MAIN 
+-----------------------------------------------
+*/
+
+
+
+}
 .barf {
     height: 100vh;
-    width: 85vw;
-    background-color: rgb(243, 240, 213);
-    top:0;
-    right:0;
-    position: fixed;
+    background-color:var(--background-color);
+    display: flex;
+    flex: 0 0 85%;
+    font-family: 'Jost';
+    padding: 50px;
+}
+
+.barf h1 {
+    font-size: 65px;
+    margin: 0;
+    height: auto;
+    font-weight: 700;
 }
 
 
