@@ -23,6 +23,7 @@ body {
     color: var(--text-color);
     display: flex;
     margin: 0;
+    height: 100%;
 }
 
 hr {
@@ -51,6 +52,8 @@ hr {
     justify-content: center;
     font-size:x-large;
     font-family: 'Jost';
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
@@ -112,7 +115,7 @@ hr {
 .barf h1 {
     font-size: 65px;
     margin: 0;
-    height: auto;
+    height: 100px;
     font-weight: 700;
 }
 
