@@ -23,7 +23,7 @@ body {
     color: var(--text-color);
     display: flex;
     margin: 0;
-    height: 100%;
+    height: 100vh;
 }
 
 hr {
@@ -43,7 +43,7 @@ hr {
 */
 
 .sidebar {
-    height: 100vh;
+    max-height: 100vh;
     background-color: var(--light-green-color);
     display:flex;
     flex: 0 0 15%;
@@ -104,7 +104,7 @@ hr {
 
 }
 .barf {
-    height: 100vh;
+    max-height: 100vh;
     background-color:var(--background-color);
     display: flex;
     flex: 0 0 85%;
