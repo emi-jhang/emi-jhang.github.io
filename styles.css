@@ -35,6 +35,7 @@ hr {
     margin-bottom: 4vh;
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
 /* 
 -----------------------------------------------
                     SIDEBAR 
@@ -112,18 +113,37 @@ a.class1:active {text-decoration: none; color: var(--background-color);}
 
 .barf {
     max-height: 100vh;
-    background-color:var(--background-color);
+    flex-direction: column; /* Stack header and image/text vertically */
+    align-items: flex-start; 
+    background-color: var(--background-color);
     display: flex;
-    flex: 0 0 85%;
+    flex: 0 0 80%;
     font-family: 'Jost';
     padding: 50px;
+    gap: 20px; /* Adds spacing between header and content */
 }
 
 .barf h1 {
     font-size: 65px;
     margin: 0;
-    height: 100px;
     font-weight: 700;
 }
 
+.barf .content {
+    display: flex;        /* Aligns image and text horizontally */
+    /* align-items: center;  Align image and text vertically in the middle */
+    gap: 20px;            /* Adds space between image and text */
+}
+
+.barf img {
+    width: 20%;           /* Set image width */
+    height: auto;         /* Maintain aspect ratio */
+    border-radius: 8px;   /* Optional: Rounded corners */
+}
+
+.barf p {
+    margin: 0;            /* Remove default margin */
+    font-size: 23px;      /* Adjust text size */
+    line-height: 1.5;     /* Improve text readability */
+}
 
