@@ -126,7 +126,9 @@ hr {
   user-select: none;
   box-shadow: 0 0px 4px var(--pink-color), 0 0px 10px var(--pink-color);
 }
-
+.content li .text-small-margin a {
+  color: var(--pink-color)
+}
 .menu {
   position: relative;
   margin: 0 auto;
