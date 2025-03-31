@@ -1,59 +1,219 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emi Jhang</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    .menu-index {
+      color: rgb(243, 240, 213) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
   </style>
-
-  
 </head>
 
 <body>
-  <!-- Side Nav Bar -->
-  <div class="sidebar"> 
-      <!-- Frog -->
-    <div class="frog">
-      <li>Emi</li>
-      <li>Jhang</li>
-    </div>
-    <hr>
-      <!-- Pages -->
-      <div class="pages">
-        <li><a href="index.html" class="class1">Home</a></li>
-        <li><a HREF="experience.html" >Experience</a></li>
-        <li><a HREF="projects.html" >Projects</a></li>
-    </div>
-    <hr>
-      <!-- Social Media -->
-    <div class="social-media">
-        <a href="https://www.linkedin.com/in/emijhang/" target="_blank"><img src="linkedin.png" 
-          width="40vh" 
-          height="40vw" /></a>
-          <a href="https://github.com/emi-jhang" target="_blank"><img src="github.png" 
-            width="43vh" 
-            height="43vw" /></a>
-    </div>
-  </div>
-
-  <!-- Main Body -->
-  <div class="barf">
-    <h1>Homepage</h1>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
     <div class="content">
-      <img src="emi_picture.jpg" alt="Emi's picture">
-      <p>
-        Hello! I'm Emi, and I'm currently a senior at Northeastern University studying computer science. 
-        with a concentration in Artificial Intelligence. Aside from my proficiency with technology, I exhibit 
-        grandma-like tendencies through my hobbies of baking, crocheting, reading, and loving puzzles. 
-      </p>
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Intro-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <img class="me" src="img/me.png">
+          </div>
+          <div class="flex-item flex-column">
+            <p class="text">
+              <h2>Emi Jhang</h2><br>
+              CS Student at Northeastern University
+              <a target="_blank" href="mailto:emijhang@gmail.com">emijhang@gmail.com</a>
+              <a target="_blank" href="mailto:jhang.e@northeastern.edu">jhang.e@northeastern.edu</a>
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2>Navigation</h2>
+            <ul>
+              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#work-exp">Work Experience</a></li>
+              <li><a href="#list-of-projects">List of Projects</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="about-me">About Me</h2>
+            <hr>
+            <p class="text">
+              Hi! I'm Emi, a graduating senior at Northeastern University in Boston, MA! My concentration lies in developing 
+              Machine Learning and AI programs/models, however I am well-versed in full-stack software development and have 
+              completed extensive projects in both domains. What interests me the most is application of ML/DL/AI in the medical 
+              field (such as early cancer detection, risk evaluation, etc.) as well as image processing and computer vision.
+            </p>
+          </div>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------->
+        <div class="flex-row">
+          <div class="flex-item flex-column full-width">
+            <h2 id="work-exp">Work Experience</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image max-width-140" src="img/afrl.png">
+          </div>
+          <div class="flex-item flex-item-stretch-6 flex-column">
+            <p class="text">
+              <a target="_blank" class="highlight-text" href="https://www.afrl.af.mil/RI/">Griffiss Institute (AFRL)</a><br>
+              <strong>AI/ML Co-op</strong><br> 
+              The overall goal of my co-op project was to develop a way to automate the BDA process to aid analysts who do classification 
+              manually. However, with the limited data available for training and testing, we cannot develop a reliable and 
+              accurate model. The idea is to use generative image models to supplement the data with synthetic images in which we
+              test for the best performing model.<br>
+              Such models included Pix2Pix, StyleGAN3, and Stable Diffusion. We evaluated 
+              images using metrics such as CNNs, FID, and Siamese Networks to determine similarity to real images and whether 
+              addition of images can outperform the model based in only real images. After confirming that supplemental 
+              generated images have the capability to improve classification performance by over 10%, identified potential avenues 
+              of future research and improvement. <br>
+              Slides available <a target="_blank" class="pink-link" href="https://drive.google.com/file/d/1Hv63gdbp5olDDjTpZnrhVicNaffkIdjt/view?usp=sharing"> here</a>
+            </p>
+            
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image max-width-140" src="img/sanrel.png">
+          </div>
+          <div class="flex-item flex-item-stretch-6 flex-column">
+            <p class="text">
+              <a target="_blank" class="highlight-text" href="https://www.sanrel.com/">Sanrel LLC</a><br>
+              <strong>Software Engineering Intern</strong><br>
+              Sanrel LLC is a materials science start-up company. Alongside a team of interns, I collaborated to design, develop, 
+              and test software for internal and client use. We set up a server and software to host an inventorying system for 
+              lab materials and shipments. Additionally we reviewed, documented, and updated code for clarity and ease of use 
+              for future engineers regarding projects to be taken up by Sanrel. 
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image max-width-140" src="img/wp.jpg">
+          </div>
+          <div class="flex-item flex-item-stretch-6 flex-column">
+            <p class="text">
+              <a target="_blank" class="highlight-text" href="https://www.wphospital.org/locations/white-plains-hospital-center-for-cancer-care/">White Plains Hospital Center for Cancer Care</a><br>
+              <strong>Lung Cancer Research Volunteer</strong><br>
+              At White Plains Hospital Center For Cancer Care, I helped a team of researchers by performing outreach and 
+              scheduling for research patients. I screened applicants for study eligibility and communicated study 
+              results thoughtfully. I organized materials for researchers and prepared documents, materials, and charts they would need 
+              to complete patient labs and scans. 
+            </p>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="list-of-projects">Projects</h2>
+            <ol class="publication C-list">
+              <li>
+                <p class="text-small-margin">
+                  <strong> Marble Solitaire </strong><br>
+                  <i>Language/Tools: Java, JUnit</i><br>
+                  Using the terminal, users can play a Marble Solitaire Game that can be played in three 
+                  different modes. Utilized a model, view, and controller design for implementation
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  <strong> Image Processing </strong><br>
+                  <i>Language/Tools: Java, JUnit, Swing</i><br>
+                  Coded a program that allows users to load and save edited images of file formats PPM, 
+                  JPEG, PNG, and BMP. Used built-in Java GUI (Swing) to allow for an interactable interface 
+                  and a model, view, controller design
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  <strong> Mushroom Classification </strong><br>
+                  <i>Language/Tools: Python, PyTorch, scikit-learn, pandas</i><br>
+                  Developed a machine learning program to classify mushrooms as poisonous or edible given a set of features.
+                  Trained and tested neural network, logistic regression, and k-NN classification models up to 99% accuracy.
+                  Accurately predicts edibility given either all 20 features, or only a few easily recognizable features.
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  <strong> ASL Image Classification </strong><br>
+                  <i>Language/Tools: Python, PyTorch, scikit-learn, pandas</i><br>
+                  Developed an image classifier for the ASL alphabet and numbers using CNN and multinomial logistic 
+                  regression. Conducted extensive hyperparameter fine-tuning and augmentation to improve model robustness 
+                  up to 97% accuracy with Pytorch-defined CNN.
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  <strong> Text Simplification </strong><br>
+                  <i>Language/Tools: Python, TensorFlow, nltk, transformers, word2vec, scikit-learn</i><br>
+                  Developed an NLP text simplification tool for the elderly and non-native English speakers. Created our own 
+                  model using Word2Vec and tested against T5 Model and found our model outperformed T5 by human measure and 
+                  readability scores. Program accessible through a React-Flask web application.
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  <strong> NUConnect </strong><br>
+                  <i>Language/Tools: Python, MySQL, Flask, Docker</i><br>
+                  Prototyped a web app of a community forum for Northeastern students searching for co-op to connect with 
+                  each other to reduce isolation during the searching process. Allows students and employers alike to post 
+                  to a forum, apply to jobs, and see the status for applications submitted. Constructed a relational 
+                  database maintaining 22 tables with 100+ attributes, with over 1k instances of sample data.
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  <strong> SatelliteMaskNet </strong><br>
+                  <i>Language/Tools: Python, PyTorch, pandas</i><br>
+                  Developed a singular generalized NN model that performs pixel-by-pixel classification to segment 
+                  buildings from a satellite image for analysts to work with to help determine factors such as building density
+                   and efficient land usage. The model was built to generalize to cities with various building densities and 
+                   architectures and extract non-city specific features. On an unseen city achieves an accuracy of over 80%.
+                </p>
+              </li>
+              <li>
+                <p class="text-small-margin">
+                  <strong> Fake Stack Overflow (HuskyFlow) </strong><br>
+                  <i>Language/Tools: Typescript, React, MongoDB, HTML, CSS, Jest, Javascript</i><br>
+                  Extending an existing codebase with a team to propose, develop and implement features encouraging community. 
+                  Implementing a following and notification system for the existing “Stack Overflow” -esque application.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+      </div>
     </div>
+    <div class="footer-container"></div>
   </div>
-
-  <script src="scripts.js"></script>
 </body>
-</html>
 
+</html>
