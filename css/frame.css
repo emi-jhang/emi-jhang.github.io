@@ -7,7 +7,8 @@
  *************************************************************************/
  :root {
   --light-green-color: rgb(209, 218, 145);
-  --pink-color: rgb(210, 169, 184);
+  /* --pink-color: rgb(210, 169, 184); */
+  --pink-color: rgb(220, 150, 175);
   --background-color: rgb(243, 240, 213);
   --text-color: rgb(84, 98, 58)
 }
@@ -54,7 +55,7 @@ img {
   user-select: none;
   width: 100%;
   height: auto;
-  border: 3px solid var(--pink-color);
+  border: 3px solid rgb(210, 169, 184);
   border-radius: 20px;
 
 }
@@ -295,10 +296,14 @@ hr {
   overflow-x: auto;
 }
 
+.content ul {
+  list-style-type: none;
+  padding-left: 0pt;
+}
 .content p a,
 .content ul a,
 .content ol a {
-  text-decoration: none;
+  text-decoration: underline;
   color:var(--text-color);
 }
 .content p a .pink-link {
@@ -309,7 +314,7 @@ hr {
 .content ul a:hover,
 .content ol a:hover {
   text-decoration: underline;
-  color:var(--text-color);
+  color:var(--pink-color);
 }
 
 .content-table {
