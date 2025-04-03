@@ -146,10 +146,16 @@ hr {
   color: var(--background-color);
   opacity: 1 !important;
   font-weight: 700 !important;
+  gap: 50px; 
 }
+
 
 .menu .logo {
   margin-left: 20px;
+}
+.logo img {
+  width: 60px; /* Adjust size as needed */
+  height: auto;
 }
 
 .menu .logo a {
